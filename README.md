@@ -1,3 +1,8 @@
+Link to article on LinkedIn that describes this mini project
+
+https://www.linkedin.com/pulse/saved-time-money-deepseek-v3-today-rajeev-sakhuja-pbwye
+
+
 Objective
 =========
 Use Deepseek v3 to create a single page application for quizzes. 
@@ -9,9 +14,9 @@ prompt-1 : Questions json file available to JS locally
 
 prompt-2 : Questions json is available via an HTTP URL
 
-References
-==========
-https://www.developerdrive.com/third-party-javascript-library-wordpress/
+prompt-3 : Question is available in a JS file
+
+prompt-quiz : Used for generating the quiz data based on some transcripts
 
 
 Quiz generation
