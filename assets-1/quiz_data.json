@@ -1,0 +1,294 @@
+{
+    "title": "Fundamentals of Neural Networks",
+    "description": "This quiz tests your knowledge of neural networks, including neurons, layers, activation functions, and types of neural networks.",
+    "questions": [
+        {
+            "text": "What is a neuron in the context of artificial intelligence?",
+            "description": "This question tests your understanding of artificial neurons.",
+            "choices": [
+                {
+                    "answer": "A mathematical function that processes inputs and generates an output.",
+                    "correct": 1
+                },
+                {
+                    "answer": "A specialized cell in the human brain.",
+                    "correct": 0
+                },
+                {
+                    "answer": "A hardware component in a computer.",
+                    "correct": 0
+                },
+                {
+                    "answer": "A type of activation function.",
+                    "correct": 0
+                }
+            ],
+            "explanation": "In AI, a neuron is a mathematical function that processes inputs and generates an output, unlike a biological neuron in the human brain.",
+            "references": []
+        },
+        {
+            "text": "Which of the following are true about neural networks? (Select all that apply)",
+            "description": "This question tests your understanding of neural network structure.",
+            "choices": [
+                {
+                    "answer": "Neural networks are organized in layers.",
+                    "correct": 1
+                },
+                {
+                    "answer": "All layers in a neural network must have the same number of neurons.",
+                    "correct": 0
+                },
+                {
+                    "answer": "The input layer receives data and passes it to subsequent layers.",
+                    "correct": 1
+                },
+                {
+                    "answer": "Neural networks can only process linear relationships.",
+                    "correct": 0
+                }
+            ],
+            "explanation": "Neural networks are organized in layers, and the input layer receives data. However, layers can have different numbers of neurons, and neural networks can process non-linear relationships using activation functions.",
+            "references": []
+        },
+        {
+            "text": "What is the purpose of an activation function in a neural network?",
+            "description": "This question tests your understanding of activation functions.",
+            "choices": [
+                {
+                    "answer": "To introduce non-linearity to the neuron's output.",
+                    "correct": 1
+                },
+                {
+                    "answer": "To calculate the weighted average of inputs.",
+                    "correct": 0
+                },
+                {
+                    "answer": "To reduce the number of parameters in the network.",
+                    "correct": 0
+                },
+                {
+                    "answer": "To connect neurons in different layers.",
+                    "correct": 0
+                }
+            ],
+            "explanation": "Activation functions introduce non-linearity, allowing neural networks to model complex, real-world data.",
+            "references": []
+        },
+        {
+            "text": "Which of the following are types of deep learning networks? (Select all that apply)",
+            "description": "This question tests your knowledge of deep learning network types.",
+            "choices": [
+                {
+                    "answer": "Feed-forward neural networks.",
+                    "correct": 1
+                },
+                {
+                    "answer": "Convolutional neural networks (CNN).",
+                    "correct": 1
+                },
+                {
+                    "answer": "Recurrent neural networks (RNN).",
+                    "correct": 1
+                },
+                {
+                    "answer": "Linear regression networks.",
+                    "correct": 0
+                }
+            ],
+            "explanation": "Feed-forward, convolutional, and recurrent neural networks are common types of deep learning networks. Linear regression is not a type of neural network.",
+            "references": []
+        },
+        {
+            "text": "What is the role of weights in a neural network?",
+            "description": "This question tests your understanding of weights in neural networks.",
+            "choices": [
+                {
+                    "answer": "They determine the importance of input parameters.",
+                    "correct": 1
+                },
+                {
+                    "answer": "They are fixed values that do not change during training.",
+                    "correct": 0
+                },
+                {
+                    "answer": "They are used to calculate the bias of a neuron.",
+                    "correct": 0
+                },
+                {
+                    "answer": "They are only used in the output layer.",
+                    "correct": 0
+                }
+            ],
+            "explanation": "Weights determine the importance of input parameters and are adjusted during training to optimize the model.",
+            "references": []
+        },
+        {
+            "text": "Which of the following statements about bias in a neural network are true? (Select all that apply)",
+            "description": "This question tests your understanding of bias in neural networks.",
+            "choices": [
+                {
+                    "answer": "Bias is a fixed value set during training.",
+                    "correct": 1
+                },
+                {
+                    "answer": "Bias helps the model fit the data better.",
+                    "correct": 1
+                },
+                {
+                    "answer": "Bias is only used in the input layer.",
+                    "correct": 0
+                },
+                {
+                    "answer": "Bias is not necessary for neural networks.",
+                    "correct": 0
+                }
+            ],
+            "explanation": "Bias is a fixed value set during training and helps the model fit the data better by adjusting the output.",
+            "references": []
+        },
+        {
+            "text": "What is a fully connected or dense network?",
+            "description": "This question tests your understanding of fully connected networks.",
+            "choices": [
+                {
+                    "answer": "A network where all neurons in one layer are connected to all neurons in the next layer.",
+                    "correct": 1
+                },
+                {
+                    "answer": "A network with only one hidden layer.",
+                    "correct": 0
+                },
+                {
+                    "answer": "A network that uses only linear activation functions.",
+                    "correct": 0
+                },
+                {
+                    "answer": "A network with no input layer.",
+                    "correct": 0
+                }
+            ],
+            "explanation": "In a fully connected or dense network, all neurons in one layer are connected to all neurons in the next layer.",
+            "references": []
+        },
+        {
+            "text": "What is the primary purpose of a convolutional neural network (CNN)?",
+            "description": "This question tests your understanding of CNNs.",
+            "choices": [
+                {
+                    "answer": "Image and video processing.",
+                    "correct": 1
+                },
+                {
+                    "answer": "Time series data processing.",
+                    "correct": 0
+                },
+                {
+                    "answer": "Natural language processing.",
+                    "correct": 0
+                },
+                {
+                    "answer": "Regression tasks.",
+                    "correct": 0
+                }
+            ],
+            "explanation": "CNNs are specialized for image and video processing tasks, such as object detection and image recognition.",
+            "references": []
+        },
+        {
+            "text": "Which of the following tasks are suitable for recurrent neural networks (RNNs)? (Select all that apply)",
+            "description": "This question tests your understanding of RNN applications.",
+            "choices": [
+                {
+                    "answer": "Natural language processing.",
+                    "correct": 1
+                },
+                {
+                    "answer": "Speech recognition.",
+                    "correct": 1
+                },
+                {
+                    "answer": "Image classification.",
+                    "correct": 0
+                },
+                {
+                    "answer": "Time series forecasting.",
+                    "correct": 1
+                }
+            ],
+            "explanation": "RNNs are used for tasks involving sequential data, such as natural language processing, speech recognition, and time series forecasting.",
+            "references": []
+        },
+        {
+            "text": "What is the main advantage of using a deep learning network with multiple layers?",
+            "description": "This question tests your understanding of deep learning networks.",
+            "choices": [
+                {
+                    "answer": "It can learn complex patterns from data.",
+                    "correct": 1
+                },
+                {
+                    "answer": "It requires fewer parameters than a shallow network.",
+                    "correct": 0
+                },
+                {
+                    "answer": "It is faster to train than a shallow network.",
+                    "correct": 0
+                },
+                {
+                    "answer": "It does not require activation functions.",
+                    "correct": 0
+                }
+            ],
+            "explanation": "Deep learning networks with multiple layers can learn complex patterns from data, enabling them to perform tasks like image recognition and natural language processing.",
+            "references": []
+        },
+        {
+            "text": "Which of the following are true about the size of a neural network? (Select all that apply)",
+            "description": "This question tests your understanding of neural network size.",
+            "choices": [
+                {
+                    "answer": "It is measured by the number of parameters (weights and biases).",
+                    "correct": 1
+                },
+                {
+                    "answer": "A larger network can learn more intricate patterns.",
+                    "correct": 1
+                },
+                {
+                    "answer": "A larger network is always faster to train.",
+                    "correct": 0
+                },
+                {
+                    "answer": "The size of a network does not affect its performance.",
+                    "correct": 0
+                }
+            ],
+            "explanation": "The size of a neural network is measured by the number of parameters, and larger networks can learn more intricate patterns. However, they may take longer to train and require more computational resources.",
+            "references": []
+        },
+        {
+            "text": "What is the primary function of the output layer in a neural network?",
+            "description": "This question tests your understanding of the output layer.",
+            "choices": [
+                {
+                    "answer": "To produce the final output of the network.",
+                    "correct": 1
+                },
+                {
+                    "answer": "To receive input data.",
+                    "correct": 0
+                },
+                {
+                    "answer": "To apply activation functions to hidden layers.",
+                    "correct": 0
+                },
+                {
+                    "answer": "To calculate the weighted average of inputs.",
+                    "correct": 0
+                }
+            ],
+            "explanation": "The output layer produces the final output of the network, such as a classification or prediction.",
+            "references": []
+        }
+    ]
+}

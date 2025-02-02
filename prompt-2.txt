@@ -62,10 +62,10 @@ Quizes:
 
 Javascript functions:
 
-1. initialize_quiz()
-* Read the questions from json file : quiz_data.json
+1. initialize_quiz(quiz json file URL)
+* Read the quiz details from json file avilable via an HTTP URL such as "http://test.com/quiz_data.json"
 * Call the render_quiz(questions json) function
-* Read the quiz title and description from json file "quiz_data.json" and set the title/description on the HTML dom/page
+* Read the quiz title and description from json and set the title/description on the HTML dom/page
 
 2. render_quiz(questions)
 * This function will render the questions and answers in the browser DOM

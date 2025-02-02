@@ -5,15 +5,16 @@ class QuizLibrary {
         this.quizData = null;
     }
 
-    // Initialize the quiz by loading the JSON data and rendering the quiz
-    async initialize_quiz() {
+    // Initialize the quiz by loading the JSON data from the provided URL and rendering the quiz
+    async initialize_quiz(url) {
         try {
-            const response = await fetch('quiz_data.json');
+            const response = await fetch(url);
             this.quizData = await response.json();
             this.render_quiz(this.quizData.questions);
             this.setQuizTitleAndDescription();
         } catch (error) {
             console.error('Error loading quiz data:', error);
+            alert('Failed to load quiz data. Please check the URL and try again.');
         }
     }
 
@@ -131,7 +132,3 @@ class QuizLibrary {
         this.render_quiz(this.quizData.questions); // Re-render the quiz
     }
 }
-
-// Initialize the quiz library
-const quiz = new QuizLibrary();
-quiz.initialize_quiz();

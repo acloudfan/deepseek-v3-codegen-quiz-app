@@ -1,0 +1,109 @@
+
+I would like you to create a javascript library named quiz_library_wp.
+
+Idea:
+* The library will be used in a single page application for creating quizes.
+
+Quizes:
+* Question will be multiple choice questions
+* Answer may be a single coorect choice or multiple choices
+* Following json will be used to describe quiz with the list of questions
+
+{
+    "title": "Fundamentals of neural networks",
+    "description": "This is a quiz that tests your knowledge of neural networks",
+    "questions": [
+        {
+            "text": "Select the primary colors:",
+            "description": "This is a quiz that tests your knowledge of neural networks",
+            "choices": [
+                {
+                    "answer": "red",
+                    "correct": 1
+                },
+                {
+                    "answer": "blue",
+                    "correct": 1
+                },
+                {
+                    "answer": "pink",
+                    "correct": 0
+                    
+                }
+            ],
+            "explanation": "this is a dummy explanation of why this option is not correct",
+            "references": [
+                {"title": "This is a good blog", "url": "https://test.com"},
+                {"title": "This is a another blog", "url": "https://test.com"}
+            ]
+        },
+        {
+            "text": "Capital of USA",
+            "description": "This is a quiz that tests your knowledge of neural networks",
+            "choices": [
+                {
+                    "answer": "Washington DC",
+                    "correct": 1
+                },
+                {
+                    "answer": "New York",
+                    "correct": 0
+                },
+                {
+                    "answer": "Maryland",
+                    "correct": 0
+                }
+            ],
+            "explanation": "this is a dummy explanation of why this option is correct",
+            "references": []
+        }
+    ]
+}
+
+Javascript functions:
+
+1. initialize_quiz()
+* Read the quiz details from the variable quiz_data that will be made available via quiz_data.js file (assume its there)
+* Call the render_quiz(questions json) function
+* Read the quiz title and description from json and set the title/description on the HTML dom/page
+
+2. render_quiz(questions)
+* This function will render the questions and answers in the browser DOM
+* If the question has single correct answer then each choice will be presented with a radio button
+* If the question has multiple correct answer then choices will be presented with a checkbox
+* Display all questions with question number
+* User should be able to answer the questions clicking on radio buttons and checkboxes
+* A button on the screen titled "Score" should invoke the score_quiz function
+* Display the question choices with letter prefixes A, B, C, etc. 
+
+
+3. score_quiz()
+* Gather the answers from the browser dom
+* Check if user has answered all questions. if there are  any questions that have not been answered, alert the user with message "Please answer all questions (List question numbers that have not been answered)!!!" and take no further action i.e. return from function. 
+* Compare user's answers against the correct answer
+* Highlight the correct choice for each of the questions by changing the color of choice text to "dark green" 
+* Highlight the incorrect choice for each of the questions by changing the color of choice text to "dark red" 
+* Show the final score on the screen e.g., your score is 4/5 if 4 out of 5 answers are correct
+* Disable the checkboxes and radio buttons
+* If the question has the explnation attribute. Show it below the question with bold keyword: "Explanation"
+* If the question has the references attribute. Show the references as bullet point list below the question with bold keyword: "References"
+* Show a new button with the title : "Retake quiz", which will call the reset_quiz() function
+* Hide the score button
+
+4. reset_quiz()
+* Show the score button
+* Clears the radio buttons and checkboxes
+* Clear the explanations in the dom under each question
+* Clear the references in the dom under each question
+* Clear the score in the dom
+* Shuffle the order of the questions randomly
+* Removes the dom element that shows the score
+* Reset the color of all choice text to black
+
+
+HTML:
+* Generate an HTML file to test the quiz. 
+* Add the script quiz_data.js to the file (assume its already available)
+* On start the quiz will be rendered on the HTML page
+* Make the page look nice using <div> to separate the questions. Set the background for even numbered questions to light gray.
+

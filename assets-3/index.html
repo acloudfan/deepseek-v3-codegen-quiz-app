@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Library WP</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .question {
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .even {
+            background-color: #f9f9f9;
+        }
+        .odd {
+            background-color: #e9e9e9;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 5px 0;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="quiz-title"></h1>
+    <p id="quiz-description"></p>
+    <div id="quiz-container"></div>
+
+    <!-- Assume quiz_data.js is already available -->
+    <script src="quiz_data.js"></script>
+    <script src="quiz_library_wp.js"></script>
+    <script>
+        // Initialize the quiz when the page loads
+        window.onload = initialize_quiz;
+    </script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+
+Generate a quiz with 10 multiple choice questions from the following transcripts. 
+Generate at least 4 questions in which 2 or more choices are correct. 
+Question should be on the topic covered in the transcript.
+Generate the output in JSON format.
+Set references attribute to []
+
+<examples>
+Example of a bad question = "What is the primary purpose of this lesson?"
+Example of a bad question = "What topics are covered in the transcript?"
+
+Example of a good question = "What is a neuron in the context of artificial intelligence?"
+Example of a good question = "A neuron network is made up of layers, true or false?"
+
+<transcript>
+
+<JSON format>
+{
+    "title": "Fundamentals of neural networks",
+    "description": "This is a quiz that tests your knowledge of neural networks",
+    "questions": [
+        {
+            "text": "Select the primary colors:",
+            "description": "This is a quiz that tests your knowledge of neural networks",
+            "choices": [
+                {
+                    "answer": "red",
+                    "correct": 1
+                },
+                {
+                    "answer": "blue",
+                    "correct": 1
+                },
+                {
+                    "answer": "pink",
+                    "correct": 0
+                    
+                }
+            ],
+            "explanation": "this is a dummy explanation of why this option is not correct",
+            "references": [
+                {"title": "This is a good blog", "url": "https://test.com"},
+                {"title": "This is a another blog", "url": "https://test.com"}
+            ]
+        },
+        {
+            "text": "Capital of USA",
+            "description": "This is a quiz that tests your knowledge of neural networks",
+            "choices": [
+                {
+                    "answer": "Washington DC",
+                    "correct": 1
+                },
+                {
+                    "answer": "New York",
+                    "correct": 0
+                },
+                {
+                    "answer": "Maryland",
+                    "correct": 0
+                }
+            ],
+            "explanation": "this is a dummy explanation of why this option is correct",
+            "references": []
+        }
+    ]
+}
